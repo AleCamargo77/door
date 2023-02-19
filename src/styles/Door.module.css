@@ -1,0 +1,60 @@
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: var(--area-door-height);
+  width: var(--area-door-width);
+  margin: 5px;
+}
+
+.structure {
+  display: flex;
+  flex-grow: 1;
+  border-left: 5px solid brown;
+  border-top: 5px solid brown;
+  border-right: 5px solid brown;
+  width: 90%;
+}
+
+.door {
+  display: flex;
+  flex-direction: column;
+  background-color: chocolate;
+  flex-grow: 1;
+  padding: 15px;
+  align-items: center;
+}
+
+.number {
+  font-size: 3rem;
+}
+
+.floor {
+  height: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.handle {
+  position: absolute;
+  top: calc(0.45 * var(--area-door-height));
+  align-self: flex-start;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: brown;
+}
+
+.structureSelection {
+  border-left: 5px solid yellow;
+  border-top: 5px solid yellow;
+  border-right: 5px solid yellow;
+}
+
+.structureSelection .number {
+  color: yellow;
+}
+
+.structureSelection .handle {
+  background-color: yellow;
+}
