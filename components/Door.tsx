@@ -1,12 +1,18 @@
 import styles from "../src/styles/Door.module.css";
+import DoorModel from "model/DoorModel";
 
-export default function Door(props) {
-  const selected = props.selection ? styles.structureSelection : "";
+interface DoorProps {
+  door: DoorModel;
+}
+
+export default function Door(props: DoorProps) {
+  const { door } = props;
+  const selected = door.selected ? styles.structureSelection : "";
   return (
     <div className={styles.area}>
       <div className={`${styles.structure} ${selected}`}>
         <div className={styles.door}>
-          <div className={styles.number}>3</div>
+          <div className={styles.number}>{door.num}</div>
           <div className={styles.handle}></div>
         </div>
       </div>
