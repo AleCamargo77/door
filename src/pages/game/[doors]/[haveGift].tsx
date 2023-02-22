@@ -11,16 +11,16 @@ export default function game() {
   const [doors, setDoors] = useState([]);
 
   useEffect(() => {
-    const doors = +router.query.doors;
+    const doors = router.query.doors;
     const withGift = +router.query.haveGift;
     setDoors(createDoors(doors, withGift));
   }, [router?.query]);
 
   function renderDoors() {
-    return doors.map((door) => {
+    return doors.map((door, i) => {
       return (
         <Door
-          key={door.num}
+          key={i}
           value={door}
           onChange={(newPort) => setDoors(updateDoors(doors, newPort))}
         />
