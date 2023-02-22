@@ -11,10 +11,13 @@
 }
 
 .link {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  flex: 1; */
   margin: 0;
   cursor: pointer;
+  color: #fff;
+  padding: 75px 45px;
+  text-decoration: none;
 }

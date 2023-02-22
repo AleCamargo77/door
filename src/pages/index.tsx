@@ -7,7 +7,7 @@ export default function Form() {
     <div className={styles.form}>
       <div>
         <Card bgcolor="#c0392c">
-          <h1>Monty Hall</h1>{" "}
+          <h2>Monty Hall</h2>{" "}
         </Card>
 
         <Card></Card>
@@ -17,14 +17,8 @@ export default function Form() {
         <Card></Card>
 
         <Card bgcolor="#28a085">
-          <Link href={`/game/4/2`}>
-            <h2
-              style={{
-                color: "#fff",
-                padding: "80px",
-                textDecoration: "none",
-              }}
-            ></h2>
+          <Link href={`/game/4/2`} className={styles.link}>
+            <h3>Iniciar</h3>
           </Link>
         </Card>
       </div>

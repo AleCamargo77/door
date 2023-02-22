@@ -1,6 +1,6 @@
 import DoorModel from "model/DoorModel";
 
-export function createDoors(
+export function CreateDoors(
   quantities: number,
   doorWithGift: number
 ): DoorModel[] {
@@ -11,7 +11,7 @@ export function createDoors(
   });
 }
 
-export function updateDoors(
+export function UpdateDoors(
   doors: DoorModel[],
   doorModify: DoorModel
 ): DoorModel[] {
