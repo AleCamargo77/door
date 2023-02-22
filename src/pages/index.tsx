@@ -24,9 +24,7 @@ export default function Form() {
                 padding: "80px",
                 textDecoration: "none",
               }}
-            >
-              Iniciar
-            </h2>
+            ></h2>
           </Link>
         </Card>
       </div>
