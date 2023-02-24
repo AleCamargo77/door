@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import DoorModel from "model/DoorModel";
 import { Http2ServerRequest } from "http2";
 
-export default function game() {
+export default function Game() {
   const router = useRouter();
 
   const [doors, setDoors] = useState<DoorModel[]>([]);
@@ -23,7 +23,7 @@ export default function game() {
 
       setValid(qtdeDoorsValid && withGiftVallid);
     }
-  }, [doors]);
+  }, [doors, router.query.doors, router.query.haveGift]);
 
   useEffect(() => {
     if (router.query.doors && router.query.haveGift) {
